@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <title>Productos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../assets/css/estilos.css"/>
+    </head>
+    <body>
+        <div class="img_logo">
+            <img src="../assets/img/Logo.png" alt="alt"/>
+        </div>
+        <h2> <b>Formulario producto</b></h2>
+        <br>
+        <div class="contenedor_formulario_productos">
+            <form method="POST" ID="form_productos" action="productos.php" enctype="multipart/form-data">
+                <div class="insertar">
+                    <label class="titulo"> <b>Nombre del producto</b> </label>
+                    <input id="nombre" type="text" name="producto" class="input_text"> 
+                    <br>
+                    <label class="titulo"> <b>Imagen</b> </label>
+                    <input id="imagen" type="file" name="imagen" class="input_text"> 
+                    <br>
+                    <label class="titulo"> <b>Descripción</b> </label>
+                    <textarea id="descripcion" name="descripcion" class="input_text"></textarea> 
+                    <br>
+                    <label class="titulo"> <b>Precio</b> </label>
+                    <input id="precio" type="number" name="precio" class="input_text">
+                    <br>
+                    <label class="titulo"> <b>Categoría</b> </label>
+                    <input id="categoria2" type="text" name="categoria" class="input_text">
+                </div>
+                <br>
+                <div class="botones">
+                    <button id="Cancelar" type="button" class="btn_cancelar">CANCELAR</button> 
+                    <button id="GuardarProd" type="submit" name="submit" class="btn_guardar">GUARDAR</button>
+                    <br>
+                    <br>
+                </div>
+            </form>
+        </div>
+        <br><br>
+        <label class="Nombre">Santiago Rodriguez </label>
+        <script src="../assets/js/validaciones.js"></script>
+    </body>
+    
+</html>

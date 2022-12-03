@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../assets/css/estilos.css"/>
+    </head>
+    <body>
+       <center>
+        <div> Lista de Categorias
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>DESCRIPCION</th>
+                        <th>PRECIO</th>
+                        <th>CATEGORIA ID</th>
+                        <th>CATEGORIA</th>
+                        <th>IMAGEN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($lista_pro as $listaProductos){ ?>
+                        <tr>
+                            <td><?php echo $listaProductos['id'] ?> </td>
+                            <td><?php echo $listaProductos['nombre_producto']?></td>
+                            <td><?php echo $listaProductos['descripcion']?></td>
+                            <td><?php echo $listaProductos['precio']?></td>
+                            <td><?php echo $listaProductos['categoria_id']?></td>
+                            <td><?php echo $listaProductos['nombre_categoria']?></td>
+                            <td><img id= "img_pro" src="../assets/img/<?php echo $listaProductos['imagen'] ?>" alt="alt"/></td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+        </div>
+            <a href="productos.php?add">Agregar</a>
+       </center>
+    <br><br>
+    <label class="Nombre">Santiago Rodriguez </label>
+    </body>
+</html>

@@ -1,0 +1,158 @@
+*{
+ background-color: lightblue   
+}
+
+.img_logo{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+}
+
+h2{
+   font-family: Calibri;
+   text-align: center;
+   margin: 0px;
+}
+
+header{
+    text-align: center;
+}
+
+.titulo{
+    font-family: calibri;
+    font-size: 18px;
+}
+
+.insertar{
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contenedor_formulario_productos{
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.contenedor_formulario_categorias{
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+form.submitted input:invalid {
+  border: 2px solid red;
+  outline: 0;
+}
+
+form.submitted textarea:invalid {
+  border: 2px solid red;
+  outline: 0;
+}
+
+.input_text{
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn_cancelar{
+    background-color: red;
+    width: 100px;
+}
+
+.btn_guardar{
+    background-color: yellow;
+    width: 100px;
+}
+
+.Nombre{
+    font-size: 15px;
+    display: block;
+    text-align: center;
+}
+
+.msg-error{
+    color:red;
+    margin-bottom: 0px;
+    display:none;
+}
+
+.lista_pro{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-flow: row wrap;
+    margin: 0 -5px;
+}
+
+.ElementoPro{
+    text-align: center;
+    margin: auto;
+    width: 250px;
+    height: 300px;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.img_pro{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.text_pro{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+   padding-left: 30px;
+   padding-bottom: 5px;
+}
+
+.p_pro{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#div{
+    background-color: lightblue;
+}
+
+#body{
+    background-color: lightblue;
+}
+
+#img_pro{
+    max-width: 100%;
+    height: auto;
+}
+
+#table{
+    width: 800px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
